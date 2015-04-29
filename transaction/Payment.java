@@ -2,6 +2,8 @@ package main.java.transaction;
 
 import java.util.Date;
 
+import main.java.station.Terminal;
+
 /**
  * @author meredith hoffman
  *
@@ -13,7 +15,8 @@ public class Payment {
 	private ServiceType servicePurchased;
 	private double quantityPurchased; // i.e. 2 days, 5 trips, or 15.50 dollars
 	private char paymentType;
-	private String purchaseTerminal;
+	private Terminal paymentTerminal;
+	//private Customer payingCustomer;
 	/**
 	 * @return the id
 	 */
@@ -87,16 +90,16 @@ public class Payment {
 		this.paymentType = paymentType;
 	}
 	/**
-	 * @return the purchaseTerminal
+	 * @return the paymentTerminal
 	 */
-	public String getPurchaseTerminal() {
-		return purchaseTerminal;
+	public Terminal getPaymentTerminal() {
+		return paymentTerminal;
 	}
 	/**
-	 * @param purchaseTerminal the purchaseTerminal to set
+	 * @param paymentTerminal the paymentTerminal to set
 	 */
-	public void setPurchaseTerminal(String purchaseTerminal) {
-		this.purchaseTerminal = purchaseTerminal;
+	public void setPaymentTerminal(Terminal paymentTerminal) {
+		this.paymentTerminal = paymentTerminal;
 	}
 	
 }
