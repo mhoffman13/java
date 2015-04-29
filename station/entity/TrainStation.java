@@ -1,4 +1,4 @@
-package main.java.station;
+package main.java.station.entity;
 
 import java.util.Collection;
 

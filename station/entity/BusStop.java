@@ -1,7 +1,7 @@
 /**
  * 
  */
-package main.java.station;
+package main.java.station.entity;
 
 /**
  * @author meredith hoffman

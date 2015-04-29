@@ -1,8 +1,8 @@
-package main.java.transaction;
+package main.java.card.entity;
 
 import java.util.Date;
 
-import main.java.station.Station;
+import main.java.station.entity.Station;
 
 /**
  * @author meredith hoffman

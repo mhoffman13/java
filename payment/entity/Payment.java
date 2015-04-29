@@ -1,8 +1,10 @@
-package main.java.transaction;
+package main.java.payment.entity;
 
 import java.util.Date;
 
-import main.java.station.Terminal;
+import main.java.card.entity.Card;
+import main.java.common.ServiceType;
+import main.java.station.entity.Terminal;
 
 /**
  * @author meredith hoffman

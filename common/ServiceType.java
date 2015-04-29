@@ -1,4 +1,4 @@
-package main.java.transaction;
+package main.java.common;
 
 import java.util.EnumSet;
 

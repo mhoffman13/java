@@ -1,8 +1,8 @@
-package main.java.route;
+package main.java.route.entity;
 
 import java.util.Collection;
 
-import main.java.station.Station;
+import main.java.station.entity.Station;
 
 /**
  * @author meredith hoffman

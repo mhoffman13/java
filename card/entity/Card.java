@@ -1,4 +1,4 @@
-package main.java.transaction;
+package main.java.card.entity;
 
 /**
  * @author meredith hoffman
