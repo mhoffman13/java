@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="main.java.vehicle.entity.Vehicle" table="vehicle">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="phone" column name="phone_num" />
+		<property name="type" column name="vehicle_type" />
+	</class>
+	<class name="main.java.vehicle.entity.Bus" table="bus">
+		<id name="id" column="bus_id">
+			<generator class="native" />
+		</id>
+		<property name="capacity" />
+		<property name="vin" />
+	</class>
+	<class name="main.java.vehicle.entity.Train" table="train">
+		<id name="id" column="train_id">
+			<generator class="native" />
+		</id>
+		<property name="trainCarCount" column name="num_cars" />
+		<property name="tin" />
+	</class>
+	
+	<class name="main.java.route.entity.Trip" table="trip">
+		<id name="id" column="trip_id">
+			<generator class="native" />
+		</id>
+		<property name="vehicle" />
+		<property name="direction" />
+		<property name='destination' />
+		<property name="routeColor" column='route_color' />
+		<property name="routeNumber" column='route_number' />
+		<property name="trainRoute" column='train_bool' />
+		<property name="type" column='day_type' />
+	</class>
+	
+	<class name="main.java.route.entity.Arrival" table="station_arrival">
+		<id name="id" column="arrival_id">
+			<generator class="native" />
+		</id>
+		<property name="arrival" type="timestamp" column='arrival_time' />
+	</class>
+	
+	<class name="main.java.station.entity.Station" table="station">
+		<id name="id" column="station_id">
+			<generator class="native" />
+		</id>
+		<property name="type" column name="vehicle_type" />
+		<property name="name" column name="station_name" />
+		<property name="busStation" column name="is_bus_station" />
+		<property name="trainStation" column name="is_train_station" />
+		<property name="parking" column name="has_parking" />
+	</class>
+	
+	<class name="main.java.station.entity.BusStop" table="bus_only_station">
+		<id name="id" column="station">
+			<generator class="native" />
+		</id>
+		<property name="longitude" />
+		<property name="latitude" />
+		<property name="bench" column name="has_bench" />
+		<property name="shelter" column name="has_shelter" />
+	</class>
+	
+	<class name="main.java.station.entity.TrainStation" table="train_station">
+		<id name="id" column="station">
+			<generator class="native" />
+		</id>
+		<property name='onRedLine' column="red_line_bool" />
+		<property name='onYellowLine' column="yellow_line_bool" />
+		<property name='onGreenLine' column="green_line_bool" />
+		<property name='onBlueLine' column="blue_line_bool" />
+		<property name="restroom" column name="has_restroom" />
+		<property name="capacity" />
+	</class>
+	
+	<class name="main.java.card.entity.Card" table="breeze_card">
+		<id name="id" column="breeze_card_id">
+			<generator class="native" />
+		</id>
+		<property name="type" column name="bc_type" />
+		<property name="days" column name="days" />
+		<property name="trips" column name="trips" />
+		<property name="money" column name="money" />
+	</class>
+	<class name="main.java.card.entity.CardTap" table="card_tap">
+		<id name="id" column="breeze_card_id">
+			<generator class="native" />
+		</id>
+		<property name="date" type="timestamp" column="EVENT_DATE"/>
+		<property name="title"/>
+		<property name="type" column name="bc_type" />
+		<property name="days" />
+		<property name="trips" />
+		<property name="money" />
+	</class>
+</hibernate-mapping>
