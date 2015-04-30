@@ -1,4 +1,4 @@
-package main.java.common;
+package main.java.enumeration;
 
 import java.util.EnumSet;
 

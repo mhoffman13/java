@@ -1,4 +1,4 @@
-package main.java.route.entity;
+package main.java.enumeration;
 
 import java.util.EnumSet;
 

@@ -1,5 +1,7 @@
 package main.java.vehicle.entity;
 
+import main.java.enumeration.VehicleType;
+
 /**
  * @author meredith hoffman
  * This class represents the basis for both

@@ -2,6 +2,9 @@ package main.java.notification.entity;
 
 import java.util.Date;
 
+import main.java.enumeration.DistributionType;
+import main.java.enumeration.NotificationCode;
+
 /**
  * @author meredith hoffman
  * This class represents a notification in the

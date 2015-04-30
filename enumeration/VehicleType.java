@@ -1,4 +1,4 @@
-package main.java.vehicle.entity;
+package main.java.enumeration;
 
 import java.util.EnumSet;
 

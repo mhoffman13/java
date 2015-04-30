@@ -2,6 +2,7 @@ package main.java.card.entity;
 
 import java.util.Date;
 
+import main.java.enumeration.TapType;
 import main.java.station.entity.Station;
 
 /**

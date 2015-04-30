@@ -1,4 +1,4 @@
-package main.java.notification.entity;
+package main.java.enumeration;
 
 import java.util.EnumSet;
 

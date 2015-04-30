@@ -1,5 +1,7 @@
 package main.java.card.entity;
 
+import main.java.enumeration.CardType;
+
 /**
  * @author meredith hoffman
  *

@@ -1,4 +1,4 @@
-package main.java.card.entity;
+package main.java.enumeration;
 
 import java.util.EnumSet;
 

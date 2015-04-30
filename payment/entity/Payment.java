@@ -3,7 +3,7 @@ package main.java.payment.entity;
 import java.util.Date;
 
 import main.java.card.entity.Card;
-import main.java.common.ServiceType;
+import main.java.enumeration.ServiceType;
 import main.java.station.entity.Terminal;
 
 /**
