@@ -1,11 +1,20 @@
 package main.java.card.entity;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import org.hibernate.annotations.GenericGenerator;
+
 import main.java.enumeration.CardType;
 
 /**
  * @author meredith hoffman
  *
  */
+@Entity
+@Table( name = "breeze_card" )
 public class Card {
 	private String id;
 	private CardType type;

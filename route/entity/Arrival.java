@@ -10,8 +10,9 @@ import main.java.station.entity.Station;
  */
 public class Arrival {
 	private int id;
-	private Date arrival;
+	private Date arrivalTime;
 	private Station station;
+	private Trip trip;
 	/**
 	 * @return the id
 	 */
@@ -27,14 +28,14 @@ public class Arrival {
 	/**
 	 * @return the arrival
 	 */
-	public Date getArrival() {
-		return arrival;
+	public Date getArrivalTime() {
+		return arrivalTime;
 	}
 	/**
 	 * @param arrival the arrival to set
 	 */
-	public void setArrival(Date arrival) {
-		this.arrival = arrival;
+	public void setArrivalTime(Date arrival) {
+		this.arrivalTime = arrival;
 	}
 	/**
 	 * @return the station
@@ -47,6 +48,18 @@ public class Arrival {
 	 */
 	public void setStation(Station station) {
 		this.station = station;
+	}
+	/**
+	 * @return the trip
+	 */
+	public Trip getTrip() {
+		return trip;
+	}
+	/**
+	 * @param trip the trip to set
+	 */
+	public void setTrip(Trip trip) {
+		this.trip = trip;
 	}
 	
 }
